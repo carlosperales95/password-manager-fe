@@ -62,24 +62,37 @@ header {
     font-weight: 600;
     align-self: center;
     padding-left: 20px;
+    height: inherit;
 }
 
 .nav {
     margin-left: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    /* height: inherit; */
 }
 
 .nav li {
     display: inline-block;
+    width: 6rem;
     margin: 0 10px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .nav-link {
     text-decoration: none;
     color: inherit;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.4rem;
+    text-transform: uppercase;
 }
 
 .nav-link:hover,
 .nav-link:active {
     color: rgb(10, 14, 11);
+    border-bottom: 4px solid rgb(10, 14, 11);
 }
+
 </style>

@@ -31,12 +31,14 @@ body {
   margin: 0;
   background-color: rgb(10, 14, 11);
   color: rgb(235, 235, 235);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 section {
   margin: 2rem auto;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 1rem;
