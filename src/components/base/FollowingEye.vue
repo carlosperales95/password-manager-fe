@@ -45,7 +45,6 @@ export default {
     position: relative;
     width: 80px;
     height: 80px;
-    background: #fff;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -56,6 +55,7 @@ export default {
     background: inherit;
     border-radius: inherit;
     overflow: inherit;
+    background: #fff;
     box-shadow: 0 5px 45px rgba(0,0,0,0.2),
                 inset 0 0 15px #551d1d,
                 inset 0 0 15px #f2371e;
