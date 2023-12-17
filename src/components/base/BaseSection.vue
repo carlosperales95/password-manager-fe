@@ -14,12 +14,12 @@
 <script>
 export default {
     props: {
-    header: String,
-    headerStyle: {
-        type: String,
-        default: 'primary', // Default to primary style
-        validator: (value) => ['primary', 'secondary'].includes(value),
-    },
+        header: String,
+        headerStyle: {
+            type: String,
+            default: 'secondary',
+            validator: (value) => ['primary', 'secondary'].includes(value),
+        },
     },
 };
 </script>
@@ -31,7 +31,7 @@ export default {
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
+    justify-content: center;
 }
 
 .header-container {
@@ -40,18 +40,18 @@ export default {
 }
 
 .brushstroke-square {
-    background: rgba(255, 215, 0, 0); /* Transparent background */
+    background: rgba(255, 215, 0, 0);
     border: 2px solid;
     border-image: linear-gradient(to right, #ffd700, #ff7f50);
     border-image-slice: 1;
-    border-radius: 10px; /* Adjusted border-radius for a more square look */
+    border-radius: 10px;
     padding: 10px;
     width: 50%;
     text-align: center;
 }
 
 .secondary .brushstroke-text {
-    font-size: 1.8em; /* Adjusted font size */
+    font-size: 1.8em;
     margin: 0;
     background: linear-gradient(to right, #ffd700, #ff7f50);
     -webkit-background-clip: text;
@@ -60,7 +60,7 @@ export default {
 }
 
 .primary .brushstroke-text {
-    font-size: 1.8em; /* Adjusted font size */
+    font-size: 1.8em;
     margin: 0;
     color: rgb(10, 14, 11);
     background: linear-gradient(to right, #ffd700, #ff7f50);

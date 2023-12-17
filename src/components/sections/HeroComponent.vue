@@ -67,6 +67,7 @@ p {
     overflow: hidden;
     text-align: center;
     align-content: center;
+    margin-bottom: 19rem;
 }
 
 .hero {

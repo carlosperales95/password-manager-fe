@@ -82,7 +82,7 @@ export default {
 .eye-container {
     background-color: rgb(82, 16, 11);
     color: rgb(10, 14, 11);
-    height: 35rem;
+    height: 34rem;
     display: flex;
     background-size: cover;
     border-radius: 40%;
@@ -95,6 +95,7 @@ export default {
     align-self: center;
     position: absolute;
     width: 100%;
+    height: 13rem;
     top: inherit;
     margin: 0;
     padding: 1rem;
@@ -104,10 +105,10 @@ export default {
 .hover-text {
     background-color: rgb(10, 14, 11);
     align-self: center;
-    position: absolute;
+    position: relative;
     width: 30%;
     left: 35%;
-    top: 45rem;
+    top: 18rem;
     margin: 0;
     z-index: 999;
     padding-top: 2px;

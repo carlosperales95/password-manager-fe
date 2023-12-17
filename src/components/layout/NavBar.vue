@@ -3,18 +3,12 @@
         <h1 class="logo-name">Icon</h1>
         <ul class="nav">
             <li>
-                <router-link
-                    class="nav-link"
-                    to="/about"
-                >
+                <router-link class="nav-link" to="/about">
                     About
                 </router-link>
             </li>
             <li>
-                <router-link
-                    class="nav-link"
-                    to="/"
-                >
+                <router-link class="nav-link" to="/">
                     Home
                 </router-link>
             </li>
@@ -23,16 +17,14 @@
 </template>
 
 <script>
-import { RouterLink } from 'vue-router'
+import { RouterLink } from 'vue-router';
 
 export default {
     components: {
-        RouterLink
+        RouterLink,
     },
-    setup() {
-        
-    },
-}
+    setup() {},
+};
 </script>
 
 <style scoped>
@@ -46,10 +38,12 @@ header {
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 25px;
-    background-color: rgb(19, 223, 138);
+    background: rgba(19, 223, 138, 0.7);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .logo {
@@ -87,12 +81,13 @@ header {
     padding-right: 2rem;
     padding-bottom: 0.4rem;
     text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link:active {
-    color: rgb(10, 14, 11);
+    color: linear-gradient(45deg, #ffeb3b, #ff8c00);
     border-bottom: 4px solid rgb(10, 14, 11);
+    border-radius: 5px;
 }
-
 </style>
